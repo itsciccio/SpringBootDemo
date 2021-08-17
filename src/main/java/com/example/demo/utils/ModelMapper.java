@@ -23,13 +23,13 @@ public class ModelMapper extends ConfigurableMapper {
         super.configure(factory);
         this.mapperFactory = factory;
 
-        factory.registerClassMap(factory.classMap(Person.class, PersonDTO.class)
-                .customize(new CustomMapper<Person, PersonDTO>() {
-                    @Override
-                    public void mapAtoB(Person source, PersonDTO destination, MappingContext context) {
-//                        destination.setId(UUID.fromString(source.getId()));
-                    }
-                }).byDefault().toClassMap());
+//        factory.registerClassMap(factory.classMap(Person.class, PersonDTO.class)
+//                .customize(new CustomMapper<Person, PersonDTO>() {
+//                    @Override
+//                    public void mapAtoB(Person source, PersonDTO destination, MappingContext context) {
+////                        destination.setId(UUID.fromString(source.getId()));
+//                    }
+//                }).byDefault().toClassMap());
 
     }
 

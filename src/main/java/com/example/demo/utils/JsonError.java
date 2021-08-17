@@ -5,7 +5,7 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-public class JSONErrorClass {
+public class JsonError {
 
     private String errorCode;
 

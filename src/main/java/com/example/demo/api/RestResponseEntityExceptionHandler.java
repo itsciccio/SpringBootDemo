@@ -1,6 +1,6 @@
 package com.example.demo.api;
 
-import com.example.demo.utils.JSONErrorClass;
+import com.example.demo.utils.JsonError;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -19,7 +19,7 @@ public class RestResponseEntityExceptionHandler
             = { EntityNotFoundException.class})
     protected ResponseEntity<Object> handleConflict(
             RuntimeException ex, WebRequest request) {
-        JSONErrorClass jsonErrorClass = new JSONErrorClass("DOES-NOT-EXIST", ex.getMessage());
+        JsonError jsonErrorClass = new JsonError("DOES-NOT-EXIST", ex.getMessage());
         return handleExceptionInternal(ex, jsonErrorClass,
                 new HttpHeaders(), HttpStatus.CONFLICT, request);
     }

@@ -39,8 +39,7 @@ public class PersonService {
         person.setAge(createPersonRequestDTO.getAge());
 
         if(createPersonRequestDTO.getAddresses()!=null){
-            for (CreateAddressDTO addressDto : createPersonRequestDTO.getAddresses())
-            {
+            createPersonRequestDTO.getAddresses().stream().forEach(addressDto -> {
                 Address address = new Address();
                 address.setHouseNumber(addressDto.getHouseNumber());
                 address.setStreet(addressDto.getStreet());
@@ -52,7 +51,7 @@ public class PersonService {
                 address.setCity(city);
 
                 person.insertAddress(address);
-            }
+            });
         }
         userRepository.save(person);
     }
