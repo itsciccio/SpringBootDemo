@@ -2,8 +2,11 @@ package com.ciccio.ordersservice.api;
 
 import com.ciccio.ordersservice.api.dto.CreateOrderRequestDTO;
 import com.ciccio.ordersservice.api.dto.OrderDTO;
+import com.ciccio.ordersservice.api.dto.PersonDTO;
 import com.ciccio.ordersservice.service.OrderService;
+import com.ciccio.ordersservice.service.PersonService;
 import io.swagger.annotations.Api;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,15 +14,13 @@ import java.util.List;
 import java.util.UUID;
 
 @Api
+@RequiredArgsConstructor
 @RestController
 public class OrderController {
 
     private final OrderService orderService;
 
-    @Autowired
-    public OrderController(OrderService orderService) {
-        this.orderService = orderService;
-    }
+    private final PersonService personService;
 
     @PostMapping("/orders")
     public void createOrder(@RequestBody CreateOrderRequestDTO createOrderRequestDTO){
@@ -35,6 +36,11 @@ public class OrderController {
     @GetMapping("/orders/{oID}")
     public OrderDTO getOrderById(@PathVariable("oID") UUID orderId){
         return orderService.getOrderById(orderId);
+    }
+
+    @GetMapping("/persons/{pID}")
+    public PersonDTO getPersonById(@PathVariable("pID") UUID personId){
+        return personService.getPersonById(personId);
     }
 
 }

@@ -5,7 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4734545c-4b5e-42b9-9298-dcf4e402b406" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../orders-service/src/main/java/com/ciccio/ordersservice/api/dto/AddressDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../orders-service/src/main/java/com/ciccio/ordersservice/api/dto/CityDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../orders-service/src/main/java/com/ciccio/ordersservice/api/dto/PersonDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../orders-service/src/main/java/com/ciccio/ordersservice/config/FeignConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../orders-service/src/main/java/com/ciccio/ordersservice/dao/PersonClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../orders-service/src/main/java/com/ciccio/ordersservice/service/PersonService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../orders-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../orders-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../orders-service/src/main/java/com/ciccio/ordersservice/api/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../orders-service/src/main/java/com/ciccio/ordersservice/api/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../orders-service/src/main/java/com/ciccio/ordersservice/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../orders-service/src/main/java/com/ciccio/ordersservice/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../orders-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../orders-service/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,10 +45,24 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../orders-service" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.DemoApplication">
+    <configuration name="DemoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.DemoApplication" />
+      <module name="persons-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="persons-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoApplication" />
@@ -47,6 +70,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.DemoApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -61,6 +89,10 @@
       <workItem from="1629287013603" duration="379000" />
       <workItem from="1629288544197" duration="415000" />
       <workItem from="1629289054400" duration="44000" />
+      <workItem from="1629357608507" duration="1565000" />
+      <workItem from="1629721219499" duration="600000" />
+      <workItem from="1629722137197" duration="1651000" />
+      <workItem from="1630568772910" duration="13000" />
     </task>
     <servers />
   </component>
@@ -175,5 +207,16 @@
     <option featureType="dependencySupport" implementationName="java:org.apache.tomcat.embed:tomcat-embed-el" />
     <option featureType="dependencySupport" implementationName="java:com.sun.activation:jakarta.activation" />
     <option featureType="dependencySupport" implementationName="java:org.apache.logging.log4j:log4j-api" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
